@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#up{
+    font-size: 30px;
+}
+#header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+#inecrement-btn,#decrement-btn,#reset-btn,#c {
+  height: 50px;
+  width: 120px;
+  padding: 0 40px;
+  border-radius: 10px;
+  font-size: 40px;
+  background-color: rgb(11, 57, 88);
+  color: white;
+ margin: 20px;
+}
+
+#counter-value{
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgb(129, 109, 109);
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset-btn{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#colorFlipper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+}
+#c{
+    font-size: 20px!important;
+    display: inline;
+}
