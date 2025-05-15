@@ -5,100 +5,75 @@
   font-family: Arial, sans-serif;
 }
 
-body, html {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
-
+/* رأس الصفحة */
 #header {
+  font-size: 24px;
   text-align: center;
-  padding: 20px 10px;
-  font-size: 26px;
-  background-color: #f2f2f2;
+  padding: 20px;
+  background-color: #f1f1f1;
 }
 
-#up {
-  font-size: 22px;
-}
-
+/* حاوية الصفحة بالكامل */
 .container {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px); /* نقصنا مساحة الهيدر */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
+/* عنوان "المسبحة" */
 h1 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
+/* الأزرار + الرقم */
 .counter {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
+/* جميع الأزرار */
 #inecrement-btn,
 #decrement-btn,
 #reset-btn,
 #c {
-  height: 60px;
-  min-width: 140px;
-  font-size: 26px;
-  border-radius: 12px;
+  height: 50px;
+  width: 100px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
   background-color: green;
   color: white;
-  border: none;
-  padding: 10px;
+  cursor: pointer;
 }
 
+/* الزرار اللي فيه الرقم */
 #counter-value {
-  height: 60px;
-  width: 140px;
-  background-color: rgb(129, 109, 109);
+  height: 50px;
+  width: 100px;
+  background-color: #937e7e;
   color: white;
+  font-size: 24px;
   border-radius: 10px;
-  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* مظهر جميل في الشاشات الصغيرة */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 28px;
-  }
+/* زر إعادة التعيين وتغيير اللون */
+#reset-btn,
+#c {
+  width: 140px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 
-  #header {
-    font-size: 22px;
-  }
-
-  #up {
-    font-size: 18px;
-  }
-
-  #inecrement-btn,
-  #decrement-btn,
-  #reset-btn,
-  #c {
-    width: 90%;
-    font-size: 24px;
-  }
-
-  #counter-value {
-    width: 90%;
-    font-size: 28px;
-  }
-
-  .counter {
-    flex-direction: column;
-  }
+/* خلفية الصفحة */
+#colorFlipper {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
 }
