@@ -1,44 +1,25 @@
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-#up {
-  font-size: 18px;
-}
-#header {
-  font-size: 26px;
-  text-align: center;
-  margin-top: 20px;
-}
-
 .container {
   min-height: 100vh;
   width: 100%;
-  padding: 20px;
+  padding: 40px 20px; /* زيادة المسافة حول المحتوى */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .counter {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 #inecrement-btn, #decrement-btn, #reset-btn, #c {
-  height: 50px;
-  width: 100px;
+  height: 60px;
+  width: 140px;
   padding: 10px;
   border-radius: 10px;
   font-size: 24px;
@@ -48,50 +29,40 @@ body {
 }
 
 #counter-value {
-  height: 50px;
-  width: 100px;
+  height: 60px;
+  width: 140px;
   border-radius: 10px;
   background-color: rgb(129, 109, 109);
-  font-size: 28px;
+  font-size: 30px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#reset-btn {
-  font-size: 18px;
-}
-
-#colorFlipper {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  flex-direction: column;
+#header {
+  font-size: 28px;
   text-align: center;
-  padding: 10px;
+  margin: 30px 0;
 }
 
-#c {
-  font-size: 18px !important;
+#up {
+  font-size: 20px;
 }
 
-/* ✅ Media Query للهواتف */
+/* الهواتف */
 @media (max-width: 600px) {
-  .counter {
-    flex-direction: column;
-    align-items: center;
-  }
-
   #inecrement-btn, #decrement-btn, #reset-btn, #c, #counter-value {
-    width: 80%;
-    font-size: 20px;
+    width: 90%;
+    font-size: 22px;
   }
 
   #header {
-    font-size: 22px;
+    font-size: 24px;
+  }
+
+  .counter {
+    flex-direction: column;
+    align-items: center;
   }
 }
